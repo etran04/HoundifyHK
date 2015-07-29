@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074860621B69765700798B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860611B69765700798B19 /* AppDelegate.swift */; };
+		074860641B69765700798B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860631B69765700798B19 /* ViewController.swift */; };
+		074860671B69765700798B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074860651B69765700798B19 /* Main.storyboard */; };
+		074860691B69765700798B19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074860681B69765700798B19 /* Images.xcassets */; };
+		0748606C1B69765700798B19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748606A1B69765700798B19 /* LaunchScreen.xib */; };
+		074860781B69765700798B19 /* HoundifyHKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860771B69765700798B19 /* HoundifyHKTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074860721B69765700798B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074860541B69765700798B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0748605B1B69765700798B19;
+			remoteInfo = HoundifyHK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0748605C1B69765700798B19 /* HoundifyHK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoundifyHK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074860601B69765700798B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074860611B69765700798B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074860631B69765700798B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074860661B69765700798B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074860681B69765700798B19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0748606B1B69765700798B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		074860711B69765700798B19 /* HoundifyHKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoundifyHKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		074860761B69765700798B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074860771B69765700798B19 /* HoundifyHKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoundifyHKTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074860591B69765700798B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0748606E1B69765700798B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074860531B69765700798B19 = {
+			isa = PBXGroup;
+			children = (
+				0748605E1B69765700798B19 /* HoundifyHK */,
+				074860741B69765700798B19 /* HoundifyHKTests */,
+				0748605D1B69765700798B19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0748605D1B69765700798B19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0748605C1B69765700798B19 /* HoundifyHK.app */,
+				074860711B69765700798B19 /* HoundifyHKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0748605E1B69765700798B19 /* HoundifyHK */ = {
+			isa = PBXGroup;
+			children = (
+				074860611B69765700798B19 /* AppDelegate.swift */,
+				074860631B69765700798B19 /* ViewController.swift */,
+				074860651B69765700798B19 /* Main.storyboard */,
+				074860681B69765700798B19 /* Images.xcassets */,
+				0748606A1B69765700798B19 /* LaunchScreen.xib */,
+				0748605F1B69765700798B19 /* Supporting Files */,
+			);
+			path = HoundifyHK;
+			sourceTree = "<group>";
+		};
+		0748605F1B69765700798B19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074860601B69765700798B19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		074860741B69765700798B19 /* HoundifyHKTests */ = {
+			isa = PBXGroup;
+			children = (
+				074860771B69765700798B19 /* HoundifyHKTests.swift */,
+				074860751B69765700798B19 /* Supporting Files */,
+			);
+			path = HoundifyHKTests;
+			sourceTree = "<group>";
+		};
+		074860751B69765700798B19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074860761B69765700798B19 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0748605B1B69765700798B19 /* HoundifyHK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0748607B1B69765700798B19 /* Build configuration list for PBXNativeTarget "HoundifyHK" */;
+			buildPhases = (
+				074860581B69765700798B19 /* Sources */,
+				074860591B69765700798B19 /* Frameworks */,
+				0748605A1B69765700798B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoundifyHK;
+			productName = HoundifyHK;
+			productReference = 0748605C1B69765700798B19 /* HoundifyHK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074860701B69765700798B19 /* HoundifyHKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0748607E1B69765700798B19 /* Build configuration list for PBXNativeTarget "HoundifyHKTests" */;
+			buildPhases = (
+				0748606D1B69765700798B19 /* Sources */,
+				0748606E1B69765700798B19 /* Frameworks */,
+				0748606F1B69765700798B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074860731B69765700798B19 /* PBXTargetDependency */,
+			);
+			name = HoundifyHKTests;
+			productName = HoundifyHKTests;
+			productReference = 074860711B69765700798B19 /* HoundifyHKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074860541B69765700798B19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Harman International";
+				TargetAttributes = {
+					0748605B1B69765700798B19 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					074860701B69765700798B19 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 0748605B1B69765700798B19;
+					};
+				};
+			};
+			buildConfigurationList = 074860571B69765700798B19 /* Build configuration list for PBXProject "HoundifyHK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074860531B69765700798B19;
+			productRefGroup = 0748605D1B69765700798B19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0748605B1B69765700798B19 /* HoundifyHK */,
+				074860701B69765700798B19 /* HoundifyHKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0748605A1B69765700798B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074860671B69765700798B19 /* Main.storyboard in Resources */,
+				0748606C1B69765700798B19 /* LaunchScreen.xib in Resources */,
+				074860691B69765700798B19 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0748606F1B69765700798B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074860581B69765700798B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074860641B69765700798B19 /* ViewController.swift in Sources */,
+				074860621B69765700798B19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0748606D1B69765700798B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074860781B69765700798B19 /* HoundifyHKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074860731B69765700798B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0748605B1B69765700798B19 /* HoundifyHK */;
+			targetProxy = 074860721B69765700798B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		074860651B69765700798B19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074860661B69765700798B19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0748606A1B69765700798B19 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0748606B1B69765700798B19 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074860791B69765700798B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0748607A1B69765700798B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0748607C1B69765700798B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HoundifyHK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0748607D1B69765700798B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HoundifyHK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0748607F1B69765700798B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HoundifyHKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoundifyHK.app/HoundifyHK";
+			};
+			name = Debug;
+		};
+		074860801B69765700798B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HoundifyHKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HoundifyHK.app/HoundifyHK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074860571B69765700798B19 /* Build configuration list for PBXProject "HoundifyHK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074860791B69765700798B19 /* Debug */,
+				0748607A1B69765700798B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0748607B1B69765700798B19 /* Build configuration list for PBXNativeTarget "HoundifyHK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0748607C1B69765700798B19 /* Debug */,
+				0748607D1B69765700798B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0748607E1B69765700798B19 /* Build configuration list for PBXNativeTarget "HoundifyHKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0748607F1B69765700798B19 /* Debug */,
+				074860801B69765700798B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 074860541B69765700798B19 /* Project object */;
+}
