@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Set Houndify authentication credentials
+        Hound.setClientID("47TaUKx1Cvq7A19AsQy9Kw==")
+        Hound.setClientKey("neUe0h-mUGkOEpfnc_zI3603_752ko1fBt_EwaiTdWC6mKcfIItj69SlncV_jJ10rr7XSH8RH8e3_29DrH4svA==")
+        
+        
         return true
     }
 

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073BD0F81B70383C006C0588 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD0F71B70383C006C0588 /* libz.dylib */; };
+		073BD0FA1B703841006C0588 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD0F91B703841006C0588 /* libbz2.dylib */; };
+		073BD0FC1B703867006C0588 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD0FB1B703867006C0588 /* Accelerate.framework */; };
+		073BD0FE1B70386D006C0588 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD0FD1B70386D006C0588 /* AudioToolbox.framework */; };
+		073BD1001B703873006C0588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD0FF1B703873006C0588 /* Foundation.framework */; };
+		073BD1021B70387B006C0588 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD1011B70387B006C0588 /* UIKit.framework */; };
+		073BD1041B703881006C0588 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD1031B703881006C0588 /* AVFoundation.framework */; };
+		073BD1061B70388B006C0588 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD1051B70388B006C0588 /* libc++.dylib */; };
 		074860621B69765700798B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860611B69765700798B19 /* AppDelegate.swift */; };
 		074860641B69765700798B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860631B69765700798B19 /* ViewController.swift */; };
 		074860671B69765700798B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074860651B69765700798B19 /* Main.storyboard */; };
@@ -28,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		073BD0F71B70383C006C0588 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		073BD0F91B703841006C0588 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		073BD0FB1B703867006C0588 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		073BD0FD1B70386D006C0588 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		073BD0FF1B703873006C0588 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		073BD1011B70387B006C0588 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		073BD1031B703881006C0588 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		073BD1051B70388B006C0588 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		0748605C1B69765700798B19 /* HoundifyHK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoundifyHK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074860601B69765700798B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074860611B69765700798B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +68,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073BD1061B70388B006C0588 /* libc++.dylib in Frameworks */,
+				073BD1041B703881006C0588 /* AVFoundation.framework in Frameworks */,
+				073BD1021B70387B006C0588 /* UIKit.framework in Frameworks */,
+				073BD1001B703873006C0588 /* Foundation.framework in Frameworks */,
+				073BD0FE1B70386D006C0588 /* AudioToolbox.framework in Frameworks */,
+				073BD0FC1B703867006C0588 /* Accelerate.framework in Frameworks */,
+				073BD0FA1B703841006C0588 /* libbz2.dylib in Frameworks */,
+				073BD0F81B70383C006C0588 /* libz.dylib in Frameworks */,
 				074860891B69774600798B19 /* libHoundSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,10 +93,11 @@
 		074860531B69765700798B19 = {
 			isa = PBXGroup;
 			children = (
-				074860811B69774600798B19 /* HoundSDK */,
 				0748605E1B69765700798B19 /* HoundifyHK */,
 				074860741B69765700798B19 /* HoundifyHKTests */,
 				0748605D1B69765700798B19 /* Products */,
+				077529601B794818007FB121 /* Frameworks */,
+				074860811B69774600798B19 /* HoundSDK */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +176,21 @@
 				074860871B69774600798B19 /* HoundVoiceSearch.h */,
 			);
 			path = HoundSDK;
+			sourceTree = "<group>";
+		};
+		077529601B794818007FB121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				073BD0F91B703841006C0588 /* libbz2.dylib */,
+				073BD0F71B70383C006C0588 /* libz.dylib */,
+				073BD1051B70388B006C0588 /* libc++.dylib */,
+				073BD1031B703881006C0588 /* AVFoundation.framework */,
+				073BD1011B70387B006C0588 /* UIKit.framework */,
+				073BD0FF1B703873006C0588 /* Foundation.framework */,
+				073BD0FD1B70386D006C0588 /* AudioToolbox.framework */,
+				073BD0FB1B703867006C0588 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,12 +424,22 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					HoundSDK/include,
+				);
 				INFOPLIST_FILE = HoundifyHK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HoundSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HoundifyHK/Bridging-Header.h";
@@ -402,12 +452,22 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					HoundSDK/include,
+				);
 				INFOPLIST_FILE = HoundifyHK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HoundSDK",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HoundifyHK/Bridging-Header.h";
