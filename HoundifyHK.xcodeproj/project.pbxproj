@@ -16,7 +16,7 @@
 		073BD1041B703881006C0588 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD1031B703881006C0588 /* AVFoundation.framework */; };
 		073BD1061B70388B006C0588 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 073BD1051B70388B006C0588 /* libc++.dylib */; };
 		074860621B69765700798B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860611B69765700798B19 /* AppDelegate.swift */; };
-		074860641B69765700798B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860631B69765700798B19 /* ViewController.swift */; };
+		074860641B69765700798B19 /* MainRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860631B69765700798B19 /* MainRecordVC.swift */; };
 		074860671B69765700798B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074860651B69765700798B19 /* Main.storyboard */; };
 		074860691B69765700798B19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074860681B69765700798B19 /* Images.xcassets */; };
 		0748606C1B69765700798B19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748606A1B69765700798B19 /* LaunchScreen.xib */; };
@@ -25,6 +25,19 @@
 		074862301B701E3000798B19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748622F1B701E3000798B19 /* SwiftyJSON.swift */; };
 		07EF0B341B7A6A4B00B0E37C /* greenMic.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0B321B7A6A4B00B0E37C /* greenMic.png */; };
 		07EF0B351B7A6A4B00B0E37C /* redMic.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0B331B7A6A4B00B0E37C /* redMic.png */; };
+		07EF0B371B7A72CD00B0E37C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B361B7A72CD00B0E37C /* Parse.framework */; };
+		07EF0B391B7A72D000B0E37C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B381B7A72D000B0E37C /* Bolts.framework */; };
+		07EF0B3B1B7A732100B0E37C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B3A1B7A732100B0E37C /* CFNetwork.framework */; };
+		07EF0B3D1B7A732800B0E37C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B3C1B7A732800B0E37C /* CoreGraphics.framework */; };
+		07EF0B3F1B7A732E00B0E37C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B3E1B7A732E00B0E37C /* CoreLocation.framework */; };
+		07EF0B411B7A733400B0E37C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B401B7A733400B0E37C /* QuartzCore.framework */; };
+		07EF0B431B7A733A00B0E37C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B421B7A733A00B0E37C /* Security.framework */; };
+		07EF0B451B7A734800B0E37C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B441B7A734800B0E37C /* StoreKit.framework */; };
+		07EF0B471B7A735000B0E37C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B461B7A735000B0E37C /* SystemConfiguration.framework */; };
+		07EF0B491B7A735A00B0E37C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B481B7A735A00B0E37C /* libsqlite3.dylib */; };
+		07EF0B4B1B7A736100B0E37C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4A1B7A736100B0E37C /* Accounts.framework */; };
+		07EF0B4D1B7A736600B0E37C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4C1B7A736600B0E37C /* Social.framework */; };
+		07EF0B4F1B7A743200B0E37C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4E1B7A743200B0E37C /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +62,7 @@
 		0748605C1B69765700798B19 /* HoundifyHK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoundifyHK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		074860601B69765700798B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074860611B69765700798B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		074860631B69765700798B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074860631B69765700798B19 /* MainRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecordVC.swift; sourceTree = "<group>"; };
 		074860661B69765700798B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		074860681B69765700798B19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0748606B1B69765700798B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -65,6 +78,19 @@
 		0748622F1B701E3000798B19 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		07EF0B321B7A6A4B00B0E37C /* greenMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenMic.png; sourceTree = "<group>"; };
 		07EF0B331B7A6A4B00B0E37C /* redMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redMic.png; sourceTree = "<group>"; };
+		07EF0B361B7A72CD00B0E37C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		07EF0B381B7A72D000B0E37C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		07EF0B3A1B7A732100B0E37C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		07EF0B3C1B7A732800B0E37C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07EF0B3E1B7A732E00B0E37C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		07EF0B401B7A733400B0E37C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		07EF0B421B7A733A00B0E37C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		07EF0B441B7A734800B0E37C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		07EF0B461B7A735000B0E37C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		07EF0B481B7A735A00B0E37C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		07EF0B4A1B7A736100B0E37C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		07EF0B4C1B7A736600B0E37C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		07EF0B4E1B7A743200B0E37C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +98,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EF0B4F1B7A743200B0E37C /* ParseUI.framework in Frameworks */,
+				07EF0B4D1B7A736600B0E37C /* Social.framework in Frameworks */,
+				07EF0B4B1B7A736100B0E37C /* Accounts.framework in Frameworks */,
+				07EF0B491B7A735A00B0E37C /* libsqlite3.dylib in Frameworks */,
+				07EF0B471B7A735000B0E37C /* SystemConfiguration.framework in Frameworks */,
+				07EF0B451B7A734800B0E37C /* StoreKit.framework in Frameworks */,
+				07EF0B431B7A733A00B0E37C /* Security.framework in Frameworks */,
+				07EF0B411B7A733400B0E37C /* QuartzCore.framework in Frameworks */,
+				07EF0B3F1B7A732E00B0E37C /* CoreLocation.framework in Frameworks */,
+				07EF0B3D1B7A732800B0E37C /* CoreGraphics.framework in Frameworks */,
+				07EF0B3B1B7A732100B0E37C /* CFNetwork.framework in Frameworks */,
 				073BD1061B70388B006C0588 /* libc++.dylib in Frameworks */,
 				073BD1041B703881006C0588 /* AVFoundation.framework in Frameworks */,
 				073BD1021B70387B006C0588 /* UIKit.framework in Frameworks */,
 				073BD1001B703873006C0588 /* Foundation.framework in Frameworks */,
+				07EF0B371B7A72CD00B0E37C /* Parse.framework in Frameworks */,
 				073BD0FE1B70386D006C0588 /* AudioToolbox.framework in Frameworks */,
 				073BD0FC1B703867006C0588 /* Accelerate.framework in Frameworks */,
 				073BD0FA1B703841006C0588 /* libbz2.dylib in Frameworks */,
+				07EF0B391B7A72D000B0E37C /* Bolts.framework in Frameworks */,
 				073BD0F81B70383C006C0588 /* libz.dylib in Frameworks */,
 				074860891B69774600798B19 /* libHoundSDK.a in Frameworks */,
 			);
@@ -100,8 +139,8 @@
 				0748605E1B69765700798B19 /* HoundifyHK */,
 				074860741B69765700798B19 /* HoundifyHKTests */,
 				0748605D1B69765700798B19 /* Products */,
-				077529601B794818007FB121 /* Frameworks */,
 				074860811B69774600798B19 /* HoundSDK */,
+				077529601B794818007FB121 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,9 +160,7 @@
 				0748606A1B69765700798B19 /* LaunchScreen.xib */,
 				074860651B69765700798B19 /* Main.storyboard */,
 				074860611B69765700798B19 /* AppDelegate.swift */,
-				074860631B69765700798B19 /* ViewController.swift */,
-				0748622E1B70155700798B19 /* Bridging-Header.h */,
-				0748622F1B701E3000798B19 /* SwiftyJSON.swift */,
+				07EF0B501B7A748F00B0E37C /* VCs */,
 				0748605F1B69765700798B19 /* Supporting Files */,
 			);
 			path = HoundifyHK;
@@ -132,8 +169,8 @@
 		0748605F1B69765700798B19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07EF0B321B7A6A4B00B0E37C /* greenMic.png */,
-				07EF0B331B7A6A4B00B0E37C /* redMic.png */,
+				07EF0B521B7A74E300B0E37C /* Code */,
+				07EF0B511B7A74CD00B0E37C /* Images */,
 				074860601B69765700798B19 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -187,6 +224,19 @@
 		077529601B794818007FB121 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07EF0B4E1B7A743200B0E37C /* ParseUI.framework */,
+				07EF0B4C1B7A736600B0E37C /* Social.framework */,
+				07EF0B4A1B7A736100B0E37C /* Accounts.framework */,
+				07EF0B481B7A735A00B0E37C /* libsqlite3.dylib */,
+				07EF0B461B7A735000B0E37C /* SystemConfiguration.framework */,
+				07EF0B441B7A734800B0E37C /* StoreKit.framework */,
+				07EF0B421B7A733A00B0E37C /* Security.framework */,
+				07EF0B401B7A733400B0E37C /* QuartzCore.framework */,
+				07EF0B3E1B7A732E00B0E37C /* CoreLocation.framework */,
+				07EF0B3C1B7A732800B0E37C /* CoreGraphics.framework */,
+				07EF0B3A1B7A732100B0E37C /* CFNetwork.framework */,
+				07EF0B381B7A72D000B0E37C /* Bolts.framework */,
+				07EF0B361B7A72CD00B0E37C /* Parse.framework */,
 				073BD0F91B703841006C0588 /* libbz2.dylib */,
 				073BD0F71B70383C006C0588 /* libz.dylib */,
 				073BD1051B70388B006C0588 /* libc++.dylib */,
@@ -197,6 +247,32 @@
 				073BD0FB1B703867006C0588 /* Accelerate.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07EF0B501B7A748F00B0E37C /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				074860631B69765700798B19 /* MainRecordVC.swift */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
+		07EF0B511B7A74CD00B0E37C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07EF0B331B7A6A4B00B0E37C /* redMic.png */,
+				07EF0B321B7A6A4B00B0E37C /* greenMic.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		07EF0B521B7A74E300B0E37C /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				0748622F1B701E3000798B19 /* SwiftyJSON.swift */,
+				0748622E1B70155700798B19 /* Bridging-Header.h */,
+			);
+			name = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074862301B701E3000798B19 /* SwiftyJSON.swift in Sources */,
-				074860641B69765700798B19 /* ViewController.swift in Sources */,
+				074860641B69765700798B19 /* MainRecordVC.swift in Sources */,
 				074860621B69765700798B19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +510,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -462,6 +542,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,

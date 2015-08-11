@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 
 @UIApplicationMain
@@ -21,6 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Hound.setClientID("47TaUKx1Cvq7A19AsQy9Kw==")
         Hound.setClientKey("neUe0h-mUGkOEpfnc_zI3603_752ko1fBt_EwaiTdWC6mKcfIItj69SlncV_jJ10rr7XSH8RH8e3_29DrH4svA==")
         
+        // [Optional] Power your app with Local Datastore. For more info, go to
+        // https://parse.com/docs/ios_guide#localdatastore/iOS
+        Parse.enableLocalDatastore()
+        
+        // Initialize Parse.
+        Parse.setApplicationId("q0zDsAFXiBtK2FFHMwBnsqWvqsNBZcJJy3GFL9xa",
+            clientKey: "YCaxY5KPgHdrGLZoUUwReGIyqEyAtAVFc0r0Mkb3")
         
         return true
     }
