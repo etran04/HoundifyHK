@@ -13,42 +13,28 @@ let VOICE_SEARCH_END_POINT = "https://api.houndify.com/v1/audio"
 class ViewController: UIViewController {
 
     @IBOutlet weak var searchBtn: UIButton!
-    @IBOutlet weak var listenBtn: UIButton!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.text = "";
+        startListening()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    /* Callback for when the listen button is pressed */
-    @IBAction func listenPressed(sender: UIButton) {
-        self.listenBtn.enabled = false
-        
-        var temp = self.listenBtn.selected
-        if self.listenBtn.selected {
-            temp = false;
-        } else {
-            self.textView.text = nil;
-            temp = true;
-        }
-            
+    /* Starts listening through HoundVoiceSearch as view is loaded */
+    func startListening() {
         HoundVoiceSearch.instance().startListeningWithCompletionHandler(
             {error in
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.listenBtn.enabled = true;
-                    self.listenBtn.selected = temp;
-    
                     if error != nil {
                         self.textView.text = error.localizedDescription;
                     }
                 })
             })
-
     }
     
     
@@ -84,9 +70,27 @@ class ViewController: UIViewController {
                 break;
         }
         
+        checkState(currentState)
         println(stringRep)
     }
 
+    /* Helper method for changing the mic icon */
+    func checkState(state: HoundVoiceSearchState) {
+        
+        var image: UIImage!
+        
+        if state == HoundVoiceSearchState.None ||
+            state == HoundVoiceSearchState.Searching ||
+            state == HoundVoiceSearchState.Recording {
+            image = UIImage(named: "greenMic.png")
+        }
+        else {
+            image = UIImage(named: "redMic.png")
+        }
+        
+        self.searchBtn.setImage(image, forState: .Normal)
+    }
+    
     /* Helper method for taking in voice commands */
     func startSearch() {
         
@@ -95,7 +99,7 @@ class ViewController: UIViewController {
         
         // Configures voice search before searching
         var endPointURL = NSURL(string: VOICE_SEARCH_END_POINT)
-        HoundVoiceSearch.instance().enableSpeech = false;
+        //HoundVoiceSearch.instance().enableSpeech = false;
         
         HoundVoiceSearch.instance().startSearchWithRequestInfo(
             requestInfo as [NSObject : AnyObject],

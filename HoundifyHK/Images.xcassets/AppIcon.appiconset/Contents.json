@@ -21,14 +21,15 @@
       "scale" : "3x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "micappicon-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "houndhkappicon.png",
+      "filename" : "micappicon.png",
       "scale" : "3x"
     }
   ],

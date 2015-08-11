@@ -17,46 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-4t-e6i">
-                                <rect key="frame" x="441" y="20" width="48" height="30"/>
-                                <state key="normal" title="Search">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rm-0tA">
+                                <rect key="frame" x="11" y="89" width="573" height="344"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rQ-4t-e6i">
+                                <rect key="frame" x="273" y="20" width="55" height="54"/>
+                                <state key="normal" image="greenMic.png">
+                                    <color key="titleColor" red="1" green="0.040183829109999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="searchPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vdv-kQ-uzd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rm-0tA">
-                                <rect key="frame" x="11" y="71" width="573" height="289"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">JSON RESPONSE GOES HERE___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G84-5E-AY5">
-                                <rect key="frame" x="131" y="20" width="42" height="30"/>
-                                <state key="normal" title="Listen">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="listenPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2CN-3f-Ycs"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3rQ-4t-e6i" firstAttribute="baseline" secondItem="G84-5E-AY5" secondAttribute="baseline" id="88R-kR-VDY"/>
-                            <constraint firstItem="Hau-rm-0tA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="HOn-hn-rct"/>
-                            <constraint firstItem="3rQ-4t-e6i" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Lrt-cG-q3d"/>
-                            <constraint firstItem="Hau-rm-0tA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MWr-gC-Ch2"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hau-rm-0tA" secondAttribute="bottom" constant="240" id="Z2w-50-gCJ"/>
-                            <constraint firstItem="G84-5E-AY5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="131" id="eCL-wN-6nY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3rQ-4t-e6i" secondAttribute="trailing" constant="95" id="ftu-Vn-mDR"/>
-                            <constraint firstItem="Hau-rm-0tA" firstAttribute="top" secondItem="G84-5E-AY5" secondAttribute="bottom" constant="21" id="qNn-Uz-GtT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hau-rm-0tA" secondAttribute="bottom" constant="167" id="80l-Ef-nYb"/>
+                            <constraint firstItem="3rQ-4t-e6i" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Lx2-HM-ATj"/>
+                            <constraint firstItem="3rQ-4t-e6i" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="PJW-z6-GhO"/>
+                            <constraint firstItem="Hau-rm-0tA" firstAttribute="top" secondItem="3rQ-4t-e6i" secondAttribute="bottom" constant="15" id="Zpf-xJ-tbt"/>
+                            <constraint firstItem="Hau-rm-0tA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="i67-tC-vD8"/>
+                            <constraint firstItem="Hau-rm-0tA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-5" id="jCj-6V-t4q"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="listenBtn" destination="G84-5E-AY5" id="fEe-ai-Tm7"/>
                         <outlet property="searchBtn" destination="3rQ-4t-e6i" id="kLP-d7-2zV"/>
                         <outlet property="textView" destination="Hau-rm-0tA" id="pcP-e7-CSA"/>
                     </connections>
@@ -65,4 +54,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="greenMic.png" width="55" height="54"/>
+    </resources>
 </document>

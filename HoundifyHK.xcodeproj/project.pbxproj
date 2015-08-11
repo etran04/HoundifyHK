@@ -23,6 +23,8 @@
 		074860781B69765700798B19 /* HoundifyHKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074860771B69765700798B19 /* HoundifyHKTests.swift */; };
 		074860891B69774600798B19 /* libHoundSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 074860881B69774600798B19 /* libHoundSDK.a */; };
 		074862301B701E3000798B19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748622F1B701E3000798B19 /* SwiftyJSON.swift */; };
+		07EF0B341B7A6A4B00B0E37C /* greenMic.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0B321B7A6A4B00B0E37C /* greenMic.png */; };
+		07EF0B351B7A6A4B00B0E37C /* redMic.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0B331B7A6A4B00B0E37C /* redMic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		074860881B69774600798B19 /* libHoundSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHoundSDK.a; sourceTree = "<group>"; };
 		0748622E1B70155700798B19 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		0748622F1B701E3000798B19 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		07EF0B321B7A6A4B00B0E37C /* greenMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenMic.png; sourceTree = "<group>"; };
+		07EF0B331B7A6A4B00B0E37C /* redMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redMic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		0748605F1B69765700798B19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07EF0B321B7A6A4B00B0E37C /* greenMic.png */,
+				07EF0B331B7A6A4B00B0E37C /* redMic.png */,
 				074860601B69765700798B19 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -274,7 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EF0B351B7A6A4B00B0E37C /* redMic.png in Resources */,
 				074860671B69765700798B19 /* Main.storyboard in Resources */,
+				07EF0B341B7A6A4B00B0E37C /* greenMic.png in Resources */,
 				0748606C1B69765700798B19 /* LaunchScreen.xib in Resources */,
 				074860691B69765700798B19 /* Images.xcassets in Resources */,
 			);
