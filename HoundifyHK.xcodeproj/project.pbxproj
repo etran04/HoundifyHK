@@ -38,6 +38,7 @@
 		07EF0B4B1B7A736100B0E37C /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4A1B7A736100B0E37C /* Accounts.framework */; };
 		07EF0B4D1B7A736600B0E37C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4C1B7A736600B0E37C /* Social.framework */; };
 		07EF0B4F1B7A743200B0E37C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4E1B7A743200B0E37C /* ParseUI.framework */; };
+		07EF0B541B7A772C00B0E37C /* ParseLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		07EF0B4A1B7A736100B0E37C /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		07EF0B4C1B7A736600B0E37C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		07EF0B4E1B7A743200B0E37C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 		07EF0B501B7A748F00B0E37C /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */,
 				074860631B69765700798B19 /* MainRecordVC.swift */,
 			);
 			name = VCs;
@@ -380,6 +383,7 @@
 			files = (
 				074862301B701E3000798B19 /* SwiftyJSON.swift in Sources */,
 				074860641B69765700798B19 /* MainRecordVC.swift in Sources */,
+				07EF0B541B7A772C00B0E37C /* ParseLoginVC.swift in Sources */,
 				074860621B69765700798B19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

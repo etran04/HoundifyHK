@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hEq-bg-b2n">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--ParseLoginVC-->
+        <scene sceneID="Ijo-ou-xTX">
+            <objects>
+                <viewController title="ParseLoginVC" id="hEq-bg-b2n" customClass="ParseLoginVC" customModule="HoundifyHK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nB3-Mv-BY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="jAr-MQ-4M9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KH7-Wf-Pe9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="goToMainVC" id="kBn-f2-dKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIX-wh-5eo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="460"/>
+        </scene>
         <!--Main RecordVC-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -27,10 +48,26 @@
                                     <action selector="searchPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vdv-kQ-uzd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rm-0tA">
-                                <rect key="frame" x="16" y="89" width="568" height="344"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-GA-32a">
+                                <rect key="frame" x="269" y="550" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.65664457070000004" green="0.0" blue="0.039550586249999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="B2P-L1-G0n"/>
+                                </constraints>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="0.83276619651619543" blue="0.042011506944142685" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xyH-VX-zKe"/>
+                                    <segue destination="hEq-bg-b2n" kind="presentation" id="DqC-nA-lSb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rm-0tA">
+                                <rect key="frame" x="16" y="87" width="568" height="344"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <attributedString key="attributedText"/>
+                                <color key="textColor" red="1" green="0.83276619650000006" blue="0.042011506939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -42,15 +79,19 @@
                             <constraint firstItem="Hau-rm-0tA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="d8e-2P-5mF"/>
                             <constraint firstItem="3rQ-4t-e6i" firstAttribute="centerX" secondItem="Hau-rm-0tA" secondAttribute="centerX" id="e3V-a1-ow3"/>
                             <constraint firstItem="3rQ-4t-e6i" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="eQ3-UF-Rmx"/>
+                            <constraint firstItem="uhd-GA-32a" firstAttribute="centerX" secondItem="Hau-rm-0tA" secondAttribute="centerX" id="gjz-kd-gMO"/>
+                            <constraint firstAttribute="bottom" secondItem="uhd-GA-32a" secondAttribute="bottom" constant="20" symbolic="YES" id="lGL-KJ-Q0S"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="logoutBtn" destination="uhd-GA-32a" id="1GX-mI-f4E"/>
                         <outlet property="searchBtn" destination="3rQ-4t-e6i" id="kLP-d7-2zV"/>
                         <outlet property="textView" destination="Hau-rm-0tA" id="pcP-e7-CSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="760" y="460"/>
         </scene>
     </scenes>
     <resources>
