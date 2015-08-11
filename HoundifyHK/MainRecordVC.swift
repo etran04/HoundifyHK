@@ -20,7 +20,7 @@ class MainRecordVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         logoutBtn.layer.cornerRadius = 10
-    
+        textView.layer.cornerRadius = 10
         textView.text = "";
         startListening()
     }
