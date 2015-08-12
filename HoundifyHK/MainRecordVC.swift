@@ -8,20 +8,29 @@
 
 import UIKit
 import Parse
+import CoreLocation
 
 let VOICE_SEARCH_END_POINT = "https://api.houndify.com/v1/audio"
 
-class MainRecordVC: UIViewController {
+class MainRecordVC: UIViewController, CLLocationManagerDelegate{
 
     @IBOutlet weak var searchBtn: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var logoutBtn: UIButton!
+    
+    let locManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         logoutBtn.layer.cornerRadius = 10
         textView.layer.cornerRadius = 10
         textView.text = "";
+        
+        // Ask for location services for weather update when leaving 
+        locManager.delegate = self
+        //locManager.requestWhenInUseAuthorization()
+        locManager.requestAlwaysAuthorization()
+
         startListening()
     }
 
@@ -100,8 +109,17 @@ class MainRecordVC: UIViewController {
         
         var username = PFUser.currentUser()?.username
         
+        var currentLocation = CLLocation()
+        
+        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
+                currentLocation = locManager.location
+        }
+        
+        println(currentLocation)
+        
         // Trigger event in Parse Cloud to send a push notification to HKRules
-        PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username!]) {
+        PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username!, "locationLatitude": currentLocation.coordinate.latitude, "locationLongitude":currentLocation.coordinate.longitude]) {
             (response: AnyObject?, error: NSError?) -> Void in
             if error != nil {
                 println("Error with triggering event.")
@@ -145,10 +163,10 @@ class MainRecordVC: UIViewController {
                             let  spokenText = json["Disambiguation"]["ChoiceData"][0]["Transcription"].stringValue
                             println(spokenText)
                             
-                            if spokenText == "i am leaving now" {
+                            //if spokenText == "i am leaving now" {
                                 // Trigger event in Parse Cloud to send a push notification to HKRules
                                 self.triggerLeaveEventInCloud()
-                            }
+                            //}
                             
                         }
                     }
