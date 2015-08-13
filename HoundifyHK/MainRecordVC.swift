@@ -139,7 +139,7 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
         
         // Configures voice search before searching
         var endPointURL = NSURL(string: VOICE_SEARCH_END_POINT)
-        //HoundVoiceSearch.instance().enableSpeech = false;
+        HoundVoiceSearch.instance().enableSpeech = false;
         
         HoundVoiceSearch.instance().startSearchWithRequestInfo(
             requestInfo as [NSObject : AnyObject],
@@ -158,15 +158,17 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
                         else if (responseType == HoundVoiceSearchResponseType.HoundServer) {
                             
                             let json = JSON(response)
-                            self.textView.text = String(stringInterpolationSegment: response)
+                            //self.textView.text = String(stringInterpolationSegment: response)
                             
                             let  spokenText = json["Disambiguation"]["ChoiceData"][0]["Transcription"].stringValue
                             println(spokenText)
                             
-                            //if spokenText == "i am leaving now" {
+                            if spokenText == "i'm leaving now" ||
+                                spokenText == "i am leaving now" ||
+                                spokenText == "i'm leaving" {
                                 // Trigger event in Parse Cloud to send a push notification to HKRules
                                 self.triggerLeaveEventInCloud()
-                            //}
+                            }
                             
                         }
                     }
