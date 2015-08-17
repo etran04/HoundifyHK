@@ -23,13 +23,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "micappicon-1.png",
+      "filename" : "micAppIcon-1.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "micappicon.png",
+      "filename" : "micAppIcon.png",
       "scale" : "3x"
     }
   ],

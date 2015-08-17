@@ -11,7 +11,10 @@ import UIKit
 import Parse
 import ParseUI
 
-class ParseLoginVC: PFLogInViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
+class ParseLoginVC: PFLogInViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate{
+    
+    let logInViewController = PFLogInViewController()
+    let signInViewController = PFSignUpViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +26,7 @@ class ParseLoginVC: PFLogInViewController, PFLogInViewControllerDelegate, PFSign
             self.performSegueWithIdentifier("goToMainVC", sender: self)
         }
         else {
-            let logInViewController = PFLogInViewController()
+            // Set log in traits
             logInViewController.fields = (PFLogInFields.UsernameAndPassword
                 | PFLogInFields.LogInButton
                 | PFLogInFields.SignUpButton
@@ -31,7 +34,13 @@ class ParseLoginVC: PFLogInViewController, PFLogInViewControllerDelegate, PFSign
             logInViewController.delegate = self
             self.presentViewController(logInViewController, animated: false, completion: nil)
             
-            let signInViewController = PFSignUpViewController()
+            // Set sign up traits
+            signInViewController.fields = (PFSignUpFields.UsernameAndPassword
+                | PFSignUpFields.SignUpButton
+                | PFSignUpFields.Email
+                | PFSignUpFields.Additional
+                | PFSignUpFields.DismissButton)
+            signInViewController.signUpView?.additionalField?.placeholder = "Name"
             signInViewController.delegate = self
             logInViewController.signUpController = signInViewController
         }
@@ -42,6 +51,10 @@ class ParseLoginVC: PFLogInViewController, PFLogInViewControllerDelegate, PFSign
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) -> Void {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        signInViewController.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) -> Void {
+        signInViewController.dismissViewControllerAnimated(true, completion: nil)
     }
 }
