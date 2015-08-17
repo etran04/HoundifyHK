@@ -8,7 +8,7 @@
         <!--ParseLoginVC-->
         <scene sceneID="Ijo-ou-xTX">
             <objects>
-                <viewController title="ParseLoginVC" id="hEq-bg-b2n" customClass="ParseLoginVC" customModule="HoundifyHK" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ParseLoginVC" id="hEq-bg-b2n" customClass="InitialVC" customModule="HoundifyHK" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nB3-Mv-BY5"/>
                         <viewControllerLayoutGuide type="bottom" id="jAr-MQ-4M9"/>

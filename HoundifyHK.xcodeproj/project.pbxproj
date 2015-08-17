@@ -39,6 +39,9 @@
 		07EF0B4D1B7A736600B0E37C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4C1B7A736600B0E37C /* Social.framework */; };
 		07EF0B4F1B7A743200B0E37C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF0B4E1B7A743200B0E37C /* ParseUI.framework */; };
 		07EF0B541B7A772C00B0E37C /* ParseLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */; };
+		07FBDC861B82660F00BA0B54 /* Harman_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FBDC851B82660F00BA0B54 /* Harman_Logo.png */; };
+		07FBDC881B8268EE00BA0B54 /* ParseSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBDC871B8268EE00BA0B54 /* ParseSignUpVC.swift */; };
+		07FBDC8A1B827BC600BA0B54 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBDC891B827BC600BA0B54 /* InitialVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		07EF0B4C1B7A736600B0E37C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		07EF0B4E1B7A743200B0E37C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginVC.swift; sourceTree = "<group>"; };
+		07FBDC851B82660F00BA0B54 /* Harman_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Harman_Logo.png; sourceTree = "<group>"; };
+		07FBDC871B8268EE00BA0B54 /* ParseSignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseSignUpVC.swift; sourceTree = "<group>"; };
+		07FBDC891B827BC600BA0B54 /* InitialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,7 +260,9 @@
 		07EF0B501B7A748F00B0E37C /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				07FBDC891B827BC600BA0B54 /* InitialVC.swift */,
 				07EF0B531B7A772C00B0E37C /* ParseLoginVC.swift */,
+				07FBDC871B8268EE00BA0B54 /* ParseSignUpVC.swift */,
 				074860631B69765700798B19 /* MainRecordVC.swift */,
 			);
 			name = VCs;
@@ -263,6 +271,7 @@
 		07EF0B511B7A74CD00B0E37C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				07FBDC851B82660F00BA0B54 /* Harman_Logo.png */,
 				07EF0B331B7A6A4B00B0E37C /* redMic.png */,
 				07EF0B321B7A6A4B00B0E37C /* greenMic.png */,
 			);
@@ -362,6 +371,7 @@
 				07EF0B351B7A6A4B00B0E37C /* redMic.png in Resources */,
 				074860671B69765700798B19 /* Main.storyboard in Resources */,
 				07EF0B341B7A6A4B00B0E37C /* greenMic.png in Resources */,
+				07FBDC861B82660F00BA0B54 /* Harman_Logo.png in Resources */,
 				0748606C1B69765700798B19 /* LaunchScreen.xib in Resources */,
 				074860691B69765700798B19 /* Images.xcassets in Resources */,
 			);
@@ -382,9 +392,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				074862301B701E3000798B19 /* SwiftyJSON.swift in Sources */,
+				07FBDC8A1B827BC600BA0B54 /* InitialVC.swift in Sources */,
 				074860641B69765700798B19 /* MainRecordVC.swift in Sources */,
 				07EF0B541B7A772C00B0E37C /* ParseLoginVC.swift in Sources */,
 				074860621B69765700798B19 /* AppDelegate.swift in Sources */,
+				07FBDC881B8268EE00BA0B54 /* ParseSignUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
