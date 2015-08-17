@@ -116,8 +116,6 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
                 currentLocation = locManager.location
         }
         
-        println(currentLocation)
-        
         // Trigger event in Parse Cloud to send a push notification to HKRules
         PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username!, "locationLatitude": currentLocation.coordinate.latitude, "locationLongitude":currentLocation.coordinate.longitude]) {
             (response: AnyObject?, error: NSError?) -> Void in
