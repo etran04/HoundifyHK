@@ -107,7 +107,7 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
     /* Triggers event in Parse Cloud to send push notifcation to HKRules application */
     func triggerLeaveEventInCloud() {
         
-        var username = PFUser.currentUser()?.username
+        var username: AnyObject? = PFUser.currentUser()?["additional"]
         
         var currentLocation = CLLocation()
         
@@ -117,7 +117,7 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
         }
         
         // Trigger event in Parse Cloud to send a push notification to HKRules
-        PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username!, "locationLatitude": currentLocation.coordinate.latitude, "locationLongitude":currentLocation.coordinate.longitude]) {
+        PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username! as! String, "locationLatitude": currentLocation.coordinate.latitude, "locationLongitude":currentLocation.coordinate.longitude]) {
             (response: AnyObject?, error: NSError?) -> Void in
             if error != nil {
                 println("Error with triggering event.")
