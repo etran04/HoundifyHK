@@ -26,7 +26,7 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
         textView.layer.cornerRadius = 10
         textView.text = "";
         
-        // Ask for location services for weather update when leaving 
+        // Ask for location services for weather update
         locManager.delegate = self
         //locManager.requestWhenInUseAuthorization()
         locManager.requestAlwaysAuthorization()
@@ -117,7 +117,11 @@ class MainRecordVC: UIViewController, CLLocationManagerDelegate{
         }
         
         // Trigger event in Parse Cloud to send a push notification to HKRules
-        PFCloud.callFunctionInBackground("prepareToLeaveHouse", withParameters: ["username":username! as! String, "locationLatitude": currentLocation.coordinate.latitude, "locationLongitude":currentLocation.coordinate.longitude]) {
+        PFCloud.callFunctionInBackground("prepareToLeaveHouse",
+            withParameters:
+                ["username":username! as! String,
+                    "locationLatitude": currentLocation.coordinate.latitude,
+                    "locationLongitude":currentLocation.coordinate.longitude]) {
             (response: AnyObject?, error: NSError?) -> Void in
             if error != nil {
                 println("Error with triggering event.")
