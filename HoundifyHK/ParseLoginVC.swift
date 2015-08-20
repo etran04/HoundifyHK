@@ -20,7 +20,7 @@ class ParseLoginVC: PFLogInViewController, PFSignUpViewControllerDelegate {
             | PFLogInFields.LogInButton
             | PFLogInFields.SignUpButton
             | PFLogInFields.PasswordForgotten
-            | PFLogInFields.Facebook)
+        )
         
         // Set log in traits
         self.fields = traits

@@ -31,7 +31,7 @@ class InitialVC: UIViewController, PFLogInViewControllerDelegate, PFSignUpViewCo
                 | PFLogInFields.LogInButton
                 | PFLogInFields.SignUpButton
                 | PFLogInFields.PasswordForgotten
-                | PFLogInFields.Facebook)
+            )
         
             
             // Set sign up traits
